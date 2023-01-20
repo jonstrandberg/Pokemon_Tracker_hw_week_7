@@ -2,6 +2,14 @@
     column-count: 3;
 }
 
+ol {
+    border-style: solid;
+    margin: 15px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+
 button {
     height: 100px;
     width: 100px;
@@ -20,7 +28,7 @@ h1 {
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 40px;
+    margin-left: 20px;
     background: linear-gradient(rgb(230, 230, 116), rgb(243, 181, 88))
 }
 
