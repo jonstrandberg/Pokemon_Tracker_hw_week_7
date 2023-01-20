@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+
+
+.ordered-list 
+
+
+
+.found-pokemon {
+        display: flex;
+        height:400px;
+        flex-flow: column wrap;
+        background-color: green;
+}
+
+.pokemon-caught {
+    display: flex;
+    grid-template-columns: 60px 60px;
+}
+
+.selected-pokemon {
+    border: 20px;
+}
