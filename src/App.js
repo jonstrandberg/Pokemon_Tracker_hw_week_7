@@ -5,7 +5,7 @@ import PokemonContainer from './containers/PokemonContainer';
 function App() {
     return (
       <div>
-        <h1>Pokemon Got To Catch Them All!</h1>
+        <h1>Pokemon Tracker</h1>
         <PokemonContainer/>
       </div>
     );

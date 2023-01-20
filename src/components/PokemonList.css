@@ -1,23 +1,29 @@
-
-
-
-
-
-
-
-
-
-
-.ordered-list 
-
-
-
-.found-pokemon {
-        display: flex;
-        height:400px;
-        flex-flow: column wrap;
-        background-color: green;
+.ordered-list {
+    column-count: 3;
 }
+
+button {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #f6f3f3;
+    background: linear-gradient(-180deg, rgb(221, 41, 41), rgb(221, 41, 41) 49%, rgb(218, 40, 40) 49%, rgb(26, 25, 25) 51%, rgb(249, 249, 249) 51%);
+    border: 1px solid rgb(31, 28, 28);
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    color: #2a75bb
+}
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 40px;
+    background: linear-gradient(rgb(230, 230, 116), rgb(243, 181, 88))
+}
+
 
 .pokemon-caught {
     display: flex;

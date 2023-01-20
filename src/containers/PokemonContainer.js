@@ -30,6 +30,9 @@ const PokemonContainer = () => {
 
     return (
         <>
+         <div className="Selected Pokemon">
+        {selectedPokemon && <PokemonDetail addPokemon={addPokemon}  pokemons={selectedPokemon}/>}
+        </div>
         <div className="caught-pokemon">
         <h2>Pokemon Caught</h2>
         <PokemonList pokemons={caughtPokemonList} onPokemonClicked={onPokemonClicked} title="caught-pokemon"/>
@@ -39,9 +42,6 @@ const PokemonContainer = () => {
         <PokemonList pokemons={pokemons} onPokemonClicked={onPokemonClicked}/>
         </div>
         <br></br>
-        <div className="Selected Pokemon">
-        {selectedPokemon && <PokemonDetail addPokemon={addPokemon}  pokemons={selectedPokemon}/>}
-        </div>
         </>    
     )
 }

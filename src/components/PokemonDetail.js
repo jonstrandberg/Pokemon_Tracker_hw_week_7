@@ -16,7 +16,7 @@ const PokemonDetail = ({pokemons, addPokemon}) => {
             <a href={pokemons.url}>{pokemons.name}</a>
             </li>
             </ul>
-            <button onClick={handleClick} value={pokemons}>Pokemon Caught</button>
+            <button onClick={handleClick} value={pokemons}>Catch Pokemon </button>
         </div>
         </>
     )
