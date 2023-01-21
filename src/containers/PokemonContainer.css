@@ -5,6 +5,7 @@
   width: 300px;
   border-radius: 50%;
   border: 1px solid red;
+  filter: drop-shadow(30px 10px 4px);
 }
 
 h2 {
@@ -15,3 +16,4 @@ image {
   height: 200px;
   width: 200px;
 }
+

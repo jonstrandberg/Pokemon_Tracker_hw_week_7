@@ -46,7 +46,7 @@ const PokemonContainer = () => {
             setMessage('This pokemon is already caught!');
             setTimeout(() => {
                 setMessage(null);
-            }, 4000);
+            }, 2000);
         }
     }
 
@@ -57,6 +57,7 @@ const PokemonContainer = () => {
                 {selectedPokemon && <PokemonDetail addPokemon={addPokemon} pokemons={selectedPokemon} pokemonImage={pokemonImage} pokemonType={pokemonType} pokemonAbilities={pokemonAbilities} />}
             </div>
             <div className="message">{message}</div>
+            <p className="instructions"> Update your progress by clicking on the pokemon and adding it to your Pokemon Caught list</p>
             <div className="caught-pokemon">
                 <h2>Pokemon Caught</h2>
                 <PokemonList pokemons={caughtPokemonList} onPokemonClicked={onPokemonClicked} title="caught-pokemon" />

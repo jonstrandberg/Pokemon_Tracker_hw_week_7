@@ -21,7 +21,7 @@ const PokemonDetail = ({pokemons, addPokemon, pokemonImage, pokemonType, pokemon
     }
 
     const getAbilities = () => {
-        const abilities = pokemonAbilities.map((ability, i) => <span key={i}>{ability} </span>)
+        const abilities = pokemonAbilities.join(", ")
         return abilities
     }
 
