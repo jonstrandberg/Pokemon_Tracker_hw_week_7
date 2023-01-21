@@ -9,6 +9,8 @@ const PokemonContainer = () => {
     const [caughtPokemonList, setCaughtPokemonList] = useState([])
     const [pokemonImage, setPokemonImage] = useState(null)
     const [pokemonType, setPokemonType] = useState([])
+    const [pokemonAbilities, setPokemonAbilities] = useState([])
+    const [message, setMessage] = useState('');
 
     useEffect(() => {
         getPokemons()
@@ -31,20 +33,30 @@ const PokemonContainer = () => {
                 console.log(pokemon.sprites.front_default)
                 setPokemonType(pokemon.types.map(type => type.type.name))
                 console.log(pokemon.types)
+                setPokemonAbilities(pokemon.abilities.map(ability => ability.ability.name))
+                console.log(pokemon.abilities)
             })
     }
 
     const addPokemon = function (pokemons) {
-        const copyOfCaughtPokemon = [...caughtPokemonList, pokemons]
-        setCaughtPokemonList(copyOfCaughtPokemon)
+        const alreadyCaught = caughtPokemonList.find(p => p.name === pokemons.name);
+        if (!alreadyCaught) {
+            setCaughtPokemonList([...caughtPokemonList, pokemons]);
+        } else {
+            setMessage('This pokemon is already caught!');
+            setTimeout(() => {
+                setMessage(null);
+            }, 4000);
+        }
     }
 
 
     return (
         <>
             <div className="Selected Pokemon">
-                {selectedPokemon && <PokemonDetail addPokemon={addPokemon} pokemons={selectedPokemon} pokemonImage={pokemonImage} pokemonType={pokemonType} />}
+                {selectedPokemon && <PokemonDetail addPokemon={addPokemon} pokemons={selectedPokemon} pokemonImage={pokemonImage} pokemonType={pokemonType} pokemonAbilities={pokemonAbilities} />}
             </div>
+            <div className="message">{message}</div>
             <div className="caught-pokemon">
                 <h2>Pokemon Caught</h2>
                 <PokemonList pokemons={caughtPokemonList} onPokemonClicked={onPokemonClicked} title="caught-pokemon" />
