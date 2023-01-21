@@ -1,10 +1,10 @@
 import Pokemon from "./Pokemon"
 import './PokemonList.css'
 
-const PokemonList = ({pokemons, onPokemonClicked}) => {
+const PokemonList = ({pokemons, onPokemonClicked, PokemonImage, pokemonType}) => {
 
     const listOfPokemon = pokemons.map((pokemons) => {
-        return <Pokemon key={pokemons.name} pokemons={pokemons} name={pokemons.name} url={pokemons.url} onPokemonClicked={onPokemonClicked}/>
+        return <Pokemon key={pokemons.name} pokemons={pokemons} name={pokemons.name} url={pokemons.url} onPokemonClicked={onPokemonClicked} pokemonImage={PokemonImage} pokemonType={pokemonType}/>
 })
 
     return (

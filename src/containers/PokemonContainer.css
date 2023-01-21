@@ -1,5 +1,3 @@
-h1
-
 
 a:hover {
     background-color: yellow;
@@ -12,7 +10,9 @@ a:hover {
   border: 1px solid red;
 }
 
-
+h2 {
+  font-size: 8rem;
+}
 
 li:last-child {
     border: none;

@@ -3,10 +3,19 @@
 }
 
 ol {
-    border-style: solid;
-    margin: 15px;
+    border-style: outset;
     margin-bottom: 20px;
     margin-right: 20px;
+    padding: 55px;
+    border-radius: 15px;
+    cursor: pointer;
+	max-width: 700px;
+	position: relative;
+}
+
+p {
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 
@@ -17,27 +26,49 @@ button {
     background: #f6f3f3;
     background: linear-gradient(-180deg, rgb(221, 41, 41), rgb(221, 41, 41) 49%, rgb(218, 40, 40) 49%, rgb(26, 25, 25) 51%, rgb(249, 249, 249) 51%);
     border: 1px solid rgb(31, 28, 28);
+    font-weight: bold;
+    font-size: 1rem;
+    justify-content: flex-end;
+    align-content: right;
 }
 
 h1 {
+    margin-left: 20px;
     font-size: 4rem;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     color: #2a75bb
 }
 
+h2 {
+    font-size: 1.8rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.found-pokemon {
+    margin-left: 20px;
+}
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 20px;
     background: linear-gradient(rgb(230, 230, 116), rgb(243, 181, 88))
 }
 
 
-.pokemon-caught {
-    display: flex;
+.caught-pokemon {
     grid-template-columns: 60px 60px;
+    margin-left: 20px;
 }
 
-.selected-pokemon {
-    border: 20px;
+
+.pokemon-detail-container {
+margin-left: 20px;
+display: flex;
+justify-content: flex-start;
+justify-content: space-around;
 }
+
+li {
+    align-items: left;
+    margin: 4px;
+}
+

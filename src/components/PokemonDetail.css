@@ -1,17 +1,11 @@
-button {
-        height: 300px;
-      width: 300px;
-      border-radius: 50%;
-      border: 1px solid red;
-      font-weight: bold;
-    }
-
-
-
+p {
+    font-size: 1rem;
+    color: rgb(45, 44, 44);
+}
 
 a:hover {
     background-color: yellow;
-  }
+}
 
 
 li:last-child {
