@@ -1,8 +1,22 @@
-p {
+p { 
+    position: relative;
     font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(45, 44, 44);
 }
 
 .pokemon-detail-container {
+    position: relative;
+    left: 22.5%;
     display: flex-start;
+    width: 55%;
+    border: solid grey;
+    border-radius: 15px;
+    background-color: rgba(238, 236, 174, 0.693);
+}
+
+#pokemon-image {
+    position: relative;
+    left: 10%;
+    height:250px;
 }

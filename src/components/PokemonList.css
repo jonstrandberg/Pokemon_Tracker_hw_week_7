@@ -1,46 +1,7 @@
-.ordered-list {
-    column-count: 3;
-}
-
-ol {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 30px;
-    border-style: outset;
-    margin-bottom: 20px;
-    padding: 40px;
-    border-radius: 15px;
-    cursor: pointer;
-    max-width: 700px;
-    position: relative;
-}
-
-p {
-    margin-left: 20px;
-    font-size: 3rem;
-}
-
-.instructions {
-    margin-left: 86px;
-    font-weight: bold;
-}
-
-button {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background: #f6f3f3;
-    background: linear-gradient(-180deg, rgb(221, 41, 41), rgb(221, 41, 41) 49%, rgb(218, 40, 40) 49%, rgb(26, 25, 25) 51%, rgb(249, 249, 249) 51%);
-    border: 1px solid rgb(31, 28, 28);
-    font-weight: bold;
-    font-size: 1rem;
-    align-content: right;
-    filter: drop-shadow(8px 5px 3px);
-    cursor: pointer;
-    color: #0d1966;
-}
-
 h1 {
-    margin-left: 80px;
+    margin: 5px;
+    position: relative;
+    left: 29%;
     font-size: 5.5rem;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     color: #2a75bb;
@@ -59,17 +20,70 @@ h1 {
         0 20px 20px rgba(0, 0, 0, .15);
 }
 
+
+.ordered-list {
+    column-count: 3;
+}
+
+ol {
+    position: relative;
+    left: 20%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-style: outset;
+    margin-bottom: 20px;
+    padding: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    max-width: 700px;
+    position: relative;
+}
+
+p {
+    position: relative;
+    font-size: 3rem;
+}
+
+.instructions {
+    position: relative;
+    left: 23%;
+    font-weight: bold;
+    width: 53%;
+    border-radius: 10px;
+    padding: 15px;
+    border-style: outset;
+    background-color: #0d1966;
+    color: white;
+}
+
+button {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background: #f6f3f3;
+    background: linear-gradient(-180deg, rgb(221, 41, 41), rgb(221, 41, 41) 49%, rgb(218, 40, 40) 49%, rgb(26, 25, 25) 51%, rgb(249, 249, 249) 51%);
+    border: 1px solid rgb(31, 28, 28);
+    font-weight: bold;
+    font-size: 1rem;
+    align-content: flex-end;
+    filter: drop-shadow(8px 5px 3px);
+    cursor: pointer;
+    color: #0d1966;
+}
+
+
+
 h2 {
     color: #2a75bb;
     font-size: 1.8rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow: 1px 1px #4f4e4e;
-    margin-left: 35px;
+    position: relative;
+    left: 20%
 }
 
-h3 {
-    margin-left: 20px;
-}
 
 .found-pokemon {
     margin-left: 60px;
@@ -87,9 +101,8 @@ body {
 
 
 .pokemon-detail-container {
-    margin-left: 60px;
+    margin-left: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
 }
 
@@ -97,6 +110,8 @@ li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
     margin: 4px;
+    font-weight: bold;
+    color: #112396;
 }
 
 .message {

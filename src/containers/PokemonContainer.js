@@ -29,7 +29,7 @@ const PokemonContainer = () => {
             .then(res => res.json())
             .then(pokemon => {
                 setSelectedPokemon(pokemons)
-                setPokemonImage(pokemon.sprites.front_default)
+                setPokemonImage(pokemon.sprites.other.dream_world.front_default)
                 console.log(pokemon.sprites.front_default)
                 setPokemonType(pokemon.types.map(type => type.type.name))
                 console.log(pokemon.types)
@@ -39,7 +39,7 @@ const PokemonContainer = () => {
     }
 
     const addPokemon = function (pokemons) {
-        const alreadyCaught = caughtPokemonList.find(p => p.name === pokemons.name);
+        const alreadyCaught = caughtPokemonList.find(pokemon => pokemon.name === pokemons.name);
         if (!alreadyCaught) {
             setCaughtPokemonList([...caughtPokemonList, pokemons]);
         } else {

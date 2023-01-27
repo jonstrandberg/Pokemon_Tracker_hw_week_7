@@ -30,7 +30,7 @@ const PokemonDetail = ({pokemons, addPokemon, pokemonImage, pokemonType, pokemon
         <>
         <div className="pokemon-detail-container">
             <ul>
-            <img src={getImage()} alt={pokemons.name}/>
+            <img id='pokemon-image'  src={getImage()} alt={pokemons.name}/>
             <br></br>
             <h3><a href={pokemons.url}>{pokemons.name}</a></h3>
             <p>Pokemon type: {getType()}</p>
