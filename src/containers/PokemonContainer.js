@@ -57,7 +57,7 @@ const PokemonContainer = () => {
                 {selectedPokemon && <PokemonDetail addPokemon={addPokemon} pokemons={selectedPokemon} pokemonImage={pokemonImage} pokemonType={pokemonType} pokemonAbilities={pokemonAbilities} />}
             </div>
             <div className="message">{message}</div>
-            <p className="instructions"> Update your progress by clicking on the pokemon and adding it to your Pokemon Caught list</p>
+            <p className="instructions"> Update your progress by clicking on the pokemon and adding it to your Pokemon Caught list. Pokemon Tracker will also tell you whether you have already caught the Pokemon before.</p>
             <div className="caught-pokemon">
                 <h2>Pokemon Caught</h2>
                 <PokemonList pokemons={caughtPokemonList} onPokemonClicked={onPokemonClicked} title="caught-pokemon" />

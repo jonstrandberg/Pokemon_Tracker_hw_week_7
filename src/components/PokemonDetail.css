@@ -1,6 +1,6 @@
 p { 
     position: relative;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(45, 44, 44);
 }
@@ -17,6 +17,6 @@ p {
 
 #pokemon-image {
     position: relative;
-    left: 10%;
+    left: 25%;
     height:250px;
 }
